@@ -31,6 +31,10 @@ public class MemoryMemberRepository implements MemberRepository {
 
     @Override
     public List<Member> findAll() {
-        return new ArrayList<>(store.values()); //store 는 map 이니까 new ArrayList 해서 반환해줌, store 에 있는 values 들이 member 임
+        return new ArrayList<>(store.values()); //store 는 map 이니까 new ArrayList 의 인자로 values(member) 들을 가져와서 리스트 생성 후 반환해줌
+    }
+
+    public void clearStore() {
+        store.clear(); //store 를 싹 비워줌
     }
 }
