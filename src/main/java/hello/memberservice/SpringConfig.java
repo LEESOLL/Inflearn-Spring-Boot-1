@@ -12,7 +12,7 @@ import javax.sql.DataSource;
 @Configuration
 public class SpringConfig {
 
-    private final MemberRepository memberRepository
+    private final MemberRepository memberRepository;
 
     @Autowired
     public SpringConfig(MemberRepository memberRepository) {
