@@ -1,5 +1,6 @@
 package hello.memberservice;
 
+import hello.memberservice.aop.TimeTraceAop;
 import hello.memberservice.repository.*;
 import hello.memberservice.service.MemberService;
 import org.springframework.beans.factory.annotation.Autowired;
